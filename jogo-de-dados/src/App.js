@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 
-
+// Função para gerar um número aleatório entre 1 e 6
 const rollDice = () => Math.floor(Math.random() * 6) + 1;
 
 function App() {
-
   const [dice1, setDice1] = useState(1);
   const [dice2, setDice2] = useState(1);
   const [wins, setWins] = useState(0);
@@ -36,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Jogo dos Dados</h1>
+      <h1>Jogo de Dados</h1>
       <div className="dice-container">
         <img src={`/dice-${dice1}.png`} alt={`Dado 1: ${dice1}`} width={100} />
         <img src={`/dice-${dice2}.png`} alt={`Dado 2: ${dice2}`} width={100} />
