@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// Função para gerar um número aleatório entre 1 e 6
+
 const rollDice = () => Math.floor(Math.random() * 6) + 1;
 
 function App() {
-  // Estado para armazenar os valores dos dados, vitórias e jogadas
+
   const [dice1, setDice1] = useState(1);
   const [dice2, setDice2] = useState(1);
   const [wins, setWins] = useState(0);
